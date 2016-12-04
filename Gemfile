@@ -31,10 +31,10 @@ gem 'carrierwave'
 gem 'unicorn'
 
 # dev
-gem 'swell_media', path: '../../shopswell/engines/swell_media', branch: 'refact'
+#gem 'swell_media', path: '../../shopswell/engines/swell_media', branch: 'refact'
 
 # prod
-#gem 'swell_media', git: 'git://github.com/playswell/swell_media.git', branch: 'refact'
+gem 'swell_media', git: 'git://github.com/playswell/swell_media.git', branch: 'refact'
 
 
 group :development, :test do
