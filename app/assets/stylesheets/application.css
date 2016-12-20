@@ -18,5 +18,14 @@
 	background: url(https://s3.amazonaws.com/cdn1.parishphilp.com/family.jpg) no-repeat center top fixed;
 	-webkit-background-size: cover;
 	background-size: cover;
+	min-height: 80vh;
 }
 
+.header .overlay-layer {
+	padding-top: 0;
+	min-height: 80vh;
+}
+
+.intro-section{
+	margin-top: 40px;
+}

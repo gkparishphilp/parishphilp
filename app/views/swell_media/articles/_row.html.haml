@@ -1,0 +1,19 @@
+- cache( "row-#{article.cache_key}" ) do
+	%div[article]{ style: 'margin-top:1em;margin-bottom:1em;'}
+		.col-sm-2
+			%a{ href: article.url }
+				= image_tag article.avatar_url, class: 'img img-responsive img-rounded'
+		.col-sm-10
+			.artile-title{ style: 'font-size:125%;'}
+				= link_to article.title, article.url
+
+			%span.post-date
+				%a{href: articles_path( by: article.user_id ) }
+					By:
+					= article.user.avatar_tag( width: 20 )
+					= article.user
+			-#%span.pull-right
+				= article.publish_at.strftime('%B %e, %Y')
+			%hr
+			.clearfix
+
