@@ -1,0 +1,27 @@
+.navbar.navbar-inverse.bs-docs-nav.navbar-fixed-top.sticky-navigation
+	.container
+		.navbar-header
+			%button.navbar-toggle{ type: :button, data: { toggle: :collapse, target: "#stamp-navigation" } }
+				%span.sr-only
+					Toggle Navigation
+				%span{ style: 'color:#555;' }
+					%i.fa.fa-navicon
+
+
+		.navbar-collapse.collapse#stamp-navigation
+			%ul.nav.navbar-nav.navbar-left.main-navigation.small-text
+				%li
+					%a{ href: '/' }
+						Home
+				%li
+					%a{ href: swell_media.articles_path() }
+						Our Blog
+				
+
+			%ul.nav.navbar-nav.navbar-right.login-register.small-text
+				-# %li.login.js-login
+					%a{ href: login_path }
+						Login
+				%li.register-button.js-register.inpage-scroll{ style: 'display: none;' }
+					%a.navbar-register-button{ href: swell_media.new_contact_path }
+						Get Started

@@ -6,6 +6,8 @@ class ApplicationController < ActionController::Base
 	helper SwellMedia::Engine.helpers
 
 	before_filter :init_page_meta
+	
+	http_basic_authenticate_with name: "littlepig", password: "letmein"
 
 
 end

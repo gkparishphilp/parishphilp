@@ -10,13 +10,20 @@
 		= render 'application/header_styles'
 		= render 'application/header_scripts'
 	%body
-		%header#header
-			= render 'application/navbar'
+		%header#header{ data: { 'stellar-background-ratio' => "0.5" } }
+			.overlay-layer
+				= render 'application/navbar'
 
 		%section#main
 			= render 'application/flash'
-			= yield
+
+			.container
+				.row
+					.col-xs-12.col-md-8.col-md-offset-2.text-left
+						= yield
 
 		%footer#footer
 			= render 'application/footer'
 		= render 'application/footer_scripts'
+
+		= render 'application/analytics'
