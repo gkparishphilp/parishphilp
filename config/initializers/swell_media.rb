@@ -1,8 +1,8 @@
 
 SwellMedia.configure do |config|
 
-	config.app_name = ENV['APP_NAME'] || 'SwellApp'
-	config.app_host = ENV['APP_DOMAIN'] || 'localhost:3000'
+	config.app_name = ENV['APP_NAME'] || 'Parish-Philp'
+	config.app_host = ENV['APP_DOMAIN'] || 'parishphilp.com'
 	config.app_description = 'A Very Swell App indeed'
 	config.app_logo = 'https://media.licdn.com/media/p/1/000/27f/2a3/36f3707.jpg'
 
